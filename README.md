@@ -33,7 +33,7 @@ The generated HTML pattern report:
 ## Install
 
 ```
-git clone https://github.com/YOUR_USERNAME/patternproof.git
+git clone https://github.com/jaderileyburch/cfpb/patternproof.git
 cd patternproof
 python -m venv .venv
 source .venv/bin/activate
