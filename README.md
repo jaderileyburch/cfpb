@@ -2,7 +2,7 @@
 
 **CFPB Consumer Complaint Pattern Analysis Toolkit**
 
-_Designed by PinkViper Labs. & Jade Riley Burch_
+_Designed by PinkViper Labs._
 
 PatternProof pulls complaints from the CFPB's public Consumer Complaint search API into a local SQLite database, runs a configurable keyword and regex taxonomy across the narratives, and produces litigation-ready outputs: summary CSVs, tagged complaint lists, anonymized narrative excerpts, citation ID lists, and a standalone HTML pattern report.
 

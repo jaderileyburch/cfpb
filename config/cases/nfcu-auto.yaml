@@ -1,0 +1,132 @@
+case_id: nfcu-auto
+name: NFCU Auto Loan and Debt Collection Pattern Analysis
+
+filters:
+  company:
+    - "NAVY FEDERAL CREDIT UNION"
+  product:
+    - "Vehicle loan or lease"
+    - "Debt collection"
+  date_received_min: "2019-01-01"
+
+taxonomy:
+  repossession:
+    description: Repossession-related complaints
+    keywords:
+      - repossess
+      - repossessed
+      - repossession
+      - repo
+      - repoed
+      - towed
+      - seized vehicle
+      - took my car
+      - took my vehicle
+      - took the car
+      - took the vehicle
+      - taken my car
+      - vehicle was taken
+      - car was taken
+
+  payment_acceptance:
+    description: Continued payment acceptance before repossession
+    keywords:
+      - accepted payment
+      - accepted payments
+      - kept accepting
+      - made payment
+      - made payments
+      - kept making payments
+      - hardship plan
+      - hardship program
+      - payment arrangement
+      - payment plan
+      - deferral
+      - deferment
+      - loan modification
+      - extension
+
+  notice_failure:
+    description: Pre-disposition or pre-repo notice failure
+    keywords:
+      - never received notice
+      - no notice
+      - no letter
+      - no warning
+      - without notice
+      - without warning
+      - no notification
+      - never notified
+      - did not receive notice
+      - did not receive a notice
+      - never got a letter
+      - no advance warning
+
+  deficiency_reporting:
+    description: Deficiency balance and credit reporting after disposition
+    keywords:
+      - deficiency
+      - deficiency balance
+      - balance after repo
+      - balance owed after
+      - charge-off
+      - charged off
+      - charged-off
+      - credit report
+      - credit reporting
+      - reporting to credit
+      - reported to the credit
+      - collections after
+      - sold to collections
+      - sold the debt
+
+  vulnerability:
+    description: Vulnerable consumer indicators (disability, military, medical)
+    keywords:
+      - disabled
+      - disability
+      - medical
+      - hospital
+      - hospitalized
+      - veteran
+      - active duty
+      - military
+      - deployed
+      - deployment
+      - PTSD
+      - SCRA
+      - servicemember
+      - service member
+      - reservist
+      - National Guard
+
+  identity_name:
+    description: Name, identity, or account misattribution
+    keywords:
+      - wrong name
+      - former name
+      - maiden name
+      - deadname
+      - dead name
+      - misidentified
+      - identity theft
+      - not my account
+      - not my debt
+      - name on the account
+
+  dispute_response:
+    description: Investigation and dispute response failures
+    keywords:
+      - refused to investigate
+      - did not investigate
+      - denied dispute
+      - denied my dispute
+      - would not investigate
+      - would not provide
+      - refused to provide
+      - refused to send
+      - never provided
+      - never sent
+      - kept telling me
+      - told me there was nothing
+      - would not help

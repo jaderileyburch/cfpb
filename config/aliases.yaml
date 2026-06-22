@@ -1,0 +1,26 @@
+# Company alias map (optional).
+#
+# Companies report themselves to the CFPB under inconsistent names, and people
+# searching the data type them inconsistently too. This file collapses known
+# variants into one canonical name so a single company is not split across
+# several spellings.
+#
+# Format: each canonical name maps to a list of variants. Matching is
+# case-insensitive and is applied both at pull time (when company_normalized is
+# computed) and at query time (when you pass --company). After editing this
+# file, run `python cli.py renormalize` to recompute existing rows without
+# re-pulling.
+#
+# Delete the examples below and add your own. If this file is empty or absent,
+# the tool falls back to light suffix and case normalization only.
+
+NAVY FEDERAL CREDIT UNION:
+  - NFCU
+  - NAVY FED
+  - NAVY FEDERAL
+  - NAVY FEDERAL CU
+
+CAPITAL ONE:
+  - CAP ONE
+  - CAPITAL ONE FINANCIAL CORPORATION
+  - CAPITAL ONE, N.A.

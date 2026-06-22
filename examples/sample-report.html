@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PatternProof :: NAVY FEDERAL CREDIT UNION :: nfcu-auto</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #f7f7f5;
+  --surface-2: #ececea;
+  --border: #d9d9d4;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --accent: #2c5282;
+  --accent-soft: #ebf2fa;
+  --warn-bg: #fff8e7;
+  --warn-border: #e6d58a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; font-weight: 700; }
+h2 { font-size: 18px; margin: 36px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+h3 { font-size: 13px; margin: 20px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.meta { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.subtitle { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 16px 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+.card .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.card .value { font-size: 22px; font-weight: 600; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.card .value.small { font-size: 14px; font-weight: 500; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+th { background: var(--surface); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.bar-cell { width: 30%; }
+.bar { background: var(--surface-2); height: 6px; border-radius: 3px; overflow: hidden; }
+.bar > span { display: block; height: 100%; background: var(--accent); }
+.footnote { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+.note { background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 6px; padding: 12px 14px; margin: 20px 0; font-size: 13px; line-height: 1.55; }
+.section-wrap { margin-bottom: 8px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 800px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+.empty { color: var(--muted); font-style: italic; padding: 12px 0; }
+code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; background: var(--surface); padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>PatternProof</h1>
+<p class="subtitle">CFPB Consumer Complaint Pattern Analysis Toolkit</p>
+<p class="subtitle">NAVY FEDERAL CREDIT UNION :: case configuration <code>nfcu-auto</code></p>
+<div class="meta">Generated 2026-06-22T14:09:17.180758+00:00 from local mirror of CFPB Consumer Complaint Database</div>
+
+<div class="cards">
+  <div class="card"><div class="label">Total complaints</div><div class="value">5,439</div></div>
+  <div class="card"><div class="label">Date range</div><div class="value small">2019-01-02 to 2026-06-18</div></div>
+  <div class="card"><div class="label">Categories matched</div><div class="value">7</div></div>
+  <div class="card"><div class="label">States represented</div><div class="value">54</div></div>
+</div>
+
+<h2>Yearly complaint volume</h2>
+
+<table>
+<thead><tr><th>Year</th><th class="num">Count</th><th class="num">Share</th><th class="bar-cell"></th></tr></thead>
+<tbody>
+
+<tr>
+  <td>2019</td>
+  <td class="num">161</td>
+  <td class="num">3.0%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 9.9%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2020</td>
+  <td class="num">194</td>
+  <td class="num">3.6%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 11.9%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2021</td>
+  <td class="num">398</td>
+  <td class="num">7.3%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 24.5%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2022</td>
+  <td class="num">458</td>
+  <td class="num">8.4%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 28.2%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2023</td>
+  <td class="num">565</td>
+  <td class="num">10.4%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 34.8%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2024</td>
+  <td class="num">919</td>
+  <td class="num">16.9%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 56.6%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2025</td>
+  <td class="num">1,625</td>
+  <td class="num">29.9%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 100.0%"></span></div></td>
+</tr>
+
+<tr>
+  <td>2026</td>
+  <td class="num">1,119</td>
+  <td class="num">20.6%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 68.9%"></span></div></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<h2>Category pattern volume</h2>
+<p class="meta">Counts of complaints whose narratives match each taxonomy category. A single complaint can match multiple categories.</p>
+
+<table>
+<thead><tr><th>Category</th><th class="num">Matched</th><th class="num">Share of total</th><th class="bar-cell"></th></tr></thead>
+<tbody>
+
+<tr>
+  <td>deficiency_reporting</td>
+  <td class="num">709</td>
+  <td class="num">13.0%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 100.0%"></span></div></td>
+</tr>
+
+<tr>
+  <td>identity_name</td>
+  <td class="num">167</td>
+  <td class="num">3.1%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 23.6%"></span></div></td>
+</tr>
+
+<tr>
+  <td>repossession</td>
+  <td class="num">151</td>
+  <td class="num">2.8%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 21.3%"></span></div></td>
+</tr>
+
+<tr>
+  <td>payment_acceptance</td>
+  <td class="num">105</td>
+  <td class="num">1.9%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 14.8%"></span></div></td>
+</tr>
+
+<tr>
+  <td>vulnerability</td>
+  <td class="num">85</td>
+  <td class="num">1.6%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 12.0%"></span></div></td>
+</tr>
+
+<tr>
+  <td>notice_failure</td>
+  <td class="num">51</td>
+  <td class="num">0.9%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 7.2%"></span></div></td>
+</tr>
+
+<tr>
+  <td>dispute_response</td>
+  <td class="num">43</td>
+  <td class="num">0.8%</td>
+  <td class="bar-cell"><div class="bar"><span style="width: 6.1%"></span></div></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<div class="two-col">
+  <div class="section-wrap">
+    <h2>Company response disposition</h2>
+    
+    <table>
+    <thead><tr><th>Disposition</th><th class="num">Count</th><th class="num">Share</th></tr></thead>
+    <tbody>
+    
+    <tr>
+      <td>Closed with explanation</td>
+      <td class="num">3,308</td>
+      <td class="num">60.8%</td>
+    </tr>
+    
+    <tr>
+      <td>Closed with non-monetary relief</td>
+      <td class="num">1,702</td>
+      <td class="num">31.3%</td>
+    </tr>
+    
+    <tr>
+      <td>In progress</td>
+      <td class="num">331</td>
+      <td class="num">6.1%</td>
+    </tr>
+    
+    <tr>
+      <td>Closed with monetary relief</td>
+      <td class="num">98</td>
+      <td class="num">1.8%</td>
+    </tr>
+    
+    </tbody>
+    </table>
+    
+  </div>
+
+  <div class="section-wrap">
+    <h2>Public response posture</h2>
+    
+    <table>
+    <thead><tr><th>Public response</th><th class="num">Count</th></tr></thead>
+    <tbody>
+    
+    <tr>
+      <td>Company believes it acted appropriately as authorized by contract or law</td>
+      <td class="num">5,089</td>
+    </tr>
+    
+    <tr>
+      <td>(none)</td>
+      <td class="num">337</td>
+    </tr>
+    
+    <tr>
+      <td>Company believes complaint is the result of an isolated error</td>
+      <td class="num">13</td>
+    </tr>
+    
+    </tbody>
+    </table>
+    
+  </div>
+</div>
+
+<h2>Product breakdown</h2>
+
+<table>
+<thead><tr><th>Product</th><th>Sub-product</th><th class="num">Count</th><th class="num">Share</th></tr></thead>
+<tbody>
+
+<tr>
+  <td>Debt collection</td>
+  <td>I do not know</td>
+  <td class="num">1,682</td>
+  <td class="num">30.9%</td>
+</tr>
+
+<tr>
+  <td>Vehicle loan or lease</td>
+  <td>Loan</td>
+  <td class="num">1,620</td>
+  <td class="num">29.8%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Credit card debt</td>
+  <td class="num">1,541</td>
+  <td class="num">28.3%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Auto debt</td>
+  <td class="num">317</td>
+  <td class="num">5.8%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Other debt</td>
+  <td class="num">209</td>
+  <td class="num">3.8%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Mortgage debt</td>
+  <td class="num">20</td>
+  <td class="num">0.4%</td>
+</tr>
+
+<tr>
+  <td>Vehicle loan or lease</td>
+  <td>Lease</td>
+  <td class="num">18</td>
+  <td class="num">0.3%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Payday loan debt</td>
+  <td class="num">16</td>
+  <td class="num">0.3%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Telecommunications debt</td>
+  <td class="num">6</td>
+  <td class="num">0.1%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Federal student loan debt</td>
+  <td class="num">4</td>
+  <td class="num">0.1%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Private student loan debt</td>
+  <td class="num">3</td>
+  <td class="num">0.1%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Medical debt</td>
+  <td class="num">2</td>
+  <td class="num">0.0%</td>
+</tr>
+
+<tr>
+  <td>Debt collection</td>
+  <td>Rental debt</td>
+  <td class="num">1</td>
+  <td class="num">0.0%</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<h2>Geographic distribution (top 15)</h2>
+
+<table>
+<thead><tr><th>State</th><th class="num">Count</th><th class="num">Share</th></tr></thead>
+<tbody>
+
+<tr>
+  <td>GA</td>
+  <td class="num">778</td>
+  <td class="num">14.3%</td>
+</tr>
+
+<tr>
+  <td>TX</td>
+  <td class="num">663</td>
+  <td class="num">12.2%</td>
+</tr>
+
+<tr>
+  <td>FL</td>
+  <td class="num">642</td>
+  <td class="num">11.8%</td>
+</tr>
+
+<tr>
+  <td>CA</td>
+  <td class="num">388</td>
+  <td class="num">7.1%</td>
+</tr>
+
+<tr>
+  <td>SC</td>
+  <td class="num">317</td>
+  <td class="num">5.8%</td>
+</tr>
+
+<tr>
+  <td>MD</td>
+  <td class="num">314</td>
+  <td class="num">5.8%</td>
+</tr>
+
+<tr>
+  <td>NC</td>
+  <td class="num">272</td>
+  <td class="num">5.0%</td>
+</tr>
+
+<tr>
+  <td>VA</td>
+  <td class="num">245</td>
+  <td class="num">4.5%</td>
+</tr>
+
+<tr>
+  <td>IL</td>
+  <td class="num">211</td>
+  <td class="num">3.9%</td>
+</tr>
+
+<tr>
+  <td>PA</td>
+  <td class="num">146</td>
+  <td class="num">2.7%</td>
+</tr>
+
+<tr>
+  <td>NY</td>
+  <td class="num">127</td>
+  <td class="num">2.3%</td>
+</tr>
+
+<tr>
+  <td>LA</td>
+  <td class="num">119</td>
+  <td class="num">2.2%</td>
+</tr>
+
+<tr>
+  <td>TN</td>
+  <td class="num">108</td>
+  <td class="num">2.0%</td>
+</tr>
+
+<tr>
+  <td>MI</td>
+  <td class="num">91</td>
+  <td class="num">1.7%</td>
+</tr>
+
+<tr>
+  <td>AZ</td>
+  <td class="num">90</td>
+  <td class="num">1.7%</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<div class="note">
+<strong>Evidentiary framing.</strong>
+The CFPB Consumer Complaint Database publishes consumer-submitted complaints
+that the company has had an opportunity to respond to. Narratives appear with
+explicit consumer consent and are public record. The data is suitable as
+evidence of complaint pattern and corporate notice
+("X of [company]'s CFPB complaints in [category] over [period] involve [pattern]")
+but is not adjudicated and should not be framed as proof of misconduct in any
+single underlying case. Complaint volume reflects only consumers who knew how
+to escalate to the CFPB, so any pattern figure is an undercount.
+</div>
+
+<div class="footnote">
+Source: CFPB Consumer Complaint Database, public search API
+<code>consumerfinance.gov/data-research/consumer-complaints/search/api/v1/</code>.
+This report reflects records held in the local SQLite mirror as of the generation timestamp.
+<br><br>
+Generated by PatternProof. Designed by PinkViper Labs.
+</div>
+
+</div>
+</body>
+</html>

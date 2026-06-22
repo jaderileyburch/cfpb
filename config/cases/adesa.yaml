@@ -1,0 +1,64 @@
+case_id: adesa
+name: ADESA Corporation Pattern Analysis
+
+filters:
+  company:
+    - "ADESA CORPORATION"
+
+taxonomy:
+  title_issues:
+    description: Title transfer, missing title, or branded title disputes
+    keywords:
+      - title
+      - branded title
+      - salvage title
+      - rebuilt title
+      - clean title
+      - never received title
+      - missing title
+      - title was not transferred
+
+  condition_disclosure:
+    description: Misrepresentation of vehicle condition at auction
+    keywords:
+      - condition report
+      - misrepresented
+      - hidden damage
+      - undisclosed damage
+      - frame damage
+      - flood damage
+      - prior accident
+      - not as described
+      - misleading
+
+  fees_charges:
+    description: Auction fees, buyer fees, transport fees, or hidden charges
+    keywords:
+      - hidden fees
+      - additional fees
+      - buyer fee
+      - auction fee
+      - transport fee
+      - unexpected charges
+      - charges I did not authorize
+
+  transport_logistics:
+    description: Vehicle pickup, transport, or delivery disputes
+    keywords:
+      - transport
+      - shipping
+      - delivery
+      - pickup
+      - never picked up
+      - never delivered
+      - delayed
+
+  dispute_response:
+    description: Refusal to investigate or respond to consumer disputes
+    keywords:
+      - refused to investigate
+      - would not investigate
+      - refused to respond
+      - ignored my dispute
+      - no response
+      - never replied

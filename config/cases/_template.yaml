@@ -1,0 +1,50 @@
+case_id: my-case
+name: Descriptive name of the case or pattern analysis
+
+# Filter criteria sent to the CFPB Consumer Complaint search API.
+# Each list field is sent as repeating query parameters: values within one
+# field are ORed, and separate fields are ANDed together.
+# Omit any key you do not want to filter on.
+filters:
+  company:
+    - "EXACT COMPANY NAME AS REPORTED TO CFPB"
+  product:
+    - "Vehicle loan or lease"
+    - "Debt collection"
+    - "Mortgage"
+    - "Credit card or prepaid card"
+    - "Checking or savings account"
+    - "Credit reporting, credit repair services, or other personal consumer reports"
+    - "Money transfer, virtual currency, or money service"
+    - "Payday loan, title loan, personal loan, or advance loan"
+    - "Student loan"
+  sub_product:
+    - "Auto debt"
+  issue:
+    - "Managing the loan or lease"
+  state:
+    - "NV"
+  date_received_min: "2019-01-01"
+  date_received_max: null
+  has_narrative: false
+  # Free-text relevance search across narratives. Useful for entities that are
+  # named inside complaints but are not CFPB-supervised companies (for example
+  # a repossession agent). Pulls every complaint whose text matches, then the
+  # taxonomy below narrows it.
+  # search_term: "speedy recovery"
+
+# Classification taxonomy. Each category produces a yes/no tag per complaint
+# narrative, plus a count of how many distinct patterns matched.
+#
+# - keywords: matched as whole-word, case-insensitive substrings
+# - regex: raw regex patterns (case-insensitive)
+# - min_matches: how many pattern hits required to count as a match (default 1)
+taxonomy:
+  example_category:
+    description: Plain-language description of what this category captures
+    keywords:
+      - keyword phrase
+      - another phrase
+    regex:
+      - "\\b(pattern|variant)\\b"
+    min_matches: 1

@@ -1,0 +1,77 @@
+case_id: speedy-recovery
+name: Speedy Recovery Pattern Analysis (Narrative Mentions)
+
+# Speedy Recovery is a repossession agent, not a CFPB-supervised entity.
+# No complaints are filed against them directly. They appear only in narratives
+# of complaints filed against the creditors who used them (Capital One, BB&T, etc.).
+# This case pulls complaints where "speedy recovery" appears in the narrative text.
+
+filters:
+  search_term: "speedy recovery"
+  has_narrative: true
+
+taxonomy:
+  repossession_conduct:
+    description: Narratives describing repossession events
+    keywords:
+      - repossess
+      - repossessed
+      - repossession
+      - repo
+      - repoed
+      - towed
+      - towing
+      - seized vehicle
+      - took my car
+      - took my vehicle
+
+  breach_of_peace:
+    description: Forced entry, intimidation, breach of peace allegations
+    keywords:
+      - forced entry
+      - broke into
+      - broke the lock
+      - broke a window
+      - broke the gate
+      - threatened
+      - intimidated
+      - cussed
+      - cursed
+      - yelled
+      - argued
+      - confrontation
+      - police were called
+
+  property_taken:
+    description: Personal property left in the vehicle
+    keywords:
+      - personal property
+      - personal belongings
+      - my belongings
+      - my things
+      - items in the car
+      - items in the vehicle
+      - tools
+      - car seat
+
+  privacy_violation:
+    description: Privacy / unauthorized disclosure of consumer info
+    keywords:
+      - my information was given
+      - my personal information
+      - shared my information
+      - violation of my privacy
+      - right to privacy
+      - unauthorized disclosure
+
+  notice_failure:
+    description: No notice of repossession, no right to cure
+    keywords:
+      - no notice
+      - never notified
+      - without notice
+      - never told
+      - never sent
+      - did not receive notice
+      - never received notice
+      - never received any letter
